@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/login_style.css" media="screen" />
+    <title>AutoVision</title>
+</head>
+<body>
+    <nav>
+        <a id="neon" href="index.html">AutoVision</a>
+    </nav>
+
+    <div class="conteudo">
+        <div class="img_tele">
+            <img src="/img/logos/logo.png">
+        </div>
+        <form>
+            <div id="contactForm">
+                <div id="emailbox" style="display: none;">
+                    <label for="email">E-mail:</label></br>
+                    <input type="email" id="email" name="email">
+                </div>
+    
+                <div id="telebox" style="display: none;">
+                    <label for="tele">Número de Telemóvel:</label></br>
+                    <input type="tele" id="phone" name="phone">
+                </div>  
+            </div>
+
+            <label>Senha:</label></br>
+            <input name="senha" type="password" id="senha">
+
+            <div class="botoes">
+                <button type="button" id="botao">Utilizar E-mail</button>
+                <div class="botoesbaixo">
+                    <a href="index.html" id="voltar">Voltar</a>
+                    <button type="submit" id="submeter">Entrar</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="img_pc">
+            <img src="/img/logos/logo.png">
+        </div>
+    </div>
+
+    <script src="javascript/loginscript.js"></script>
+</body>
+</html>

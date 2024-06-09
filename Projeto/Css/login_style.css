@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
+
+/* --------------------------| Barra de navegação |-------------------------- */
+nav {
+    margin: 30px;
+    padding: 7px 30px;
+    background-color: rgb(0,0,0);  
+    border: 3px solid #FFCB0F;
+    border-radius: 20px;
+    display: flex;
+    align-items: center; 
+}
+nav a{
+    text-decoration: none;
+    color: #FFCB0F;
+    font-size: 40px;
+    font-family: "Meddon";
+}
+
+/* ---------------------------------| Corpo |-------------------------------- */
+body {
+    margin: 0;
+    background-image: url(/img/background_ouro.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    font-family: Verdana;
+}
+
+.conteudo{
+    margin: 5% 25%;
+    padding: 20px 30px;
+    background-color: black;  
+    border: 3px solid #FFCB0F;
+    border-radius: 20px;
+    align-items: center; 
+    display: flex;  
+}
+
+label{
+    color: white;
+    font-size: large;
+    font-family: Verdana;   
+}
+
+input{
+    width: 300px;
+    text-decoration: none;
+    padding: 10px; 
+    border-radius: 10px;
+    color: black;
+    font-family: Verdana;
+    margin-bottom: 20px
+}
+
+/*Design dos butões em geral*/
+button{
+    padding: 10px 30px;
+    background-color: black;  
+    border: 3px solid #FFCB0F;
+    border-radius: 10px;
+    align-items: center; 
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+    justify-content: center;
+    margin: 5px 5px;
+}
+button:hover{
+    background-color: #FFCB0F;  
+    border: 3px solid #FFCB0F;
+    color: black;
+}
+
+
+/*Tamanho e posição da logo*/
+.img_pc img{ 
+    float: center;
+    width: 250px;
+    height: 250px;
+    margin-left: 45px;
+}
+.img_tele img{
+    display: none;
+}
+
+/*Box dos botões*/
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/*Botão Voltar*/
+#voltar{
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: medium;
+    justify-content: center; 
+    border: 3px solid rgb(128, 0, 0);
+    color: white;
+}
+#voltar:hover{
+    background-color: rgb(255, 0, 0);  
+    border: 3px solid rgb(128, 0, 0);
+    color: black;
+}
+
+/*Botão Cadastrar*/
+#submeter{
+    background-color: black;  
+    border: 3px solid green;
+    color: white;
+}
+#submeter:hover{
+    background-color: rgb(0, 255, 0);  
+    border: 3px solid green;
+    color: black;
+}
+
+#neon {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 39.9px;
+    font-family: "Meddon";
+    color: #FFF;
+    text-shadow: 
+        0 0 5px black,
+        0 0 6px black,
+        0 0 10px #FFF,
+        0 0 20px #FFCB0F,
+        0 0 30px #FFCB0F,
+        0 0 40px #FFCB0F,
+        0 0 50px #FFCB0F,
+        0 0 60px #FFCB0F;
+}
+
+@media only screen and (max-width: 768px) {
+    .conteudo{
+        margin: 5% 23%;
+        padding: 20px;
+        background-color: black;  
+        border: 3px solid #FFCB0F;
+        border-radius: 20px;
+        align-items: center; 
+        display: flex;  
+        flex-direction: column;
+    }
+
+    .img_pc img{ 
+        display: none;
+    }
+    .img_tele img{
+        display:block;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        margin: 20px 0px;
+    }
+    
+    label{
+        color: white;
+        font-size: medium;
+        font-family: Verdana;   
+    }
+    
+    input{
+        width: 300px;
+        text-decoration: none;
+        padding: 10px; 
+        border-radius: 10px;
+        color: black;
+        font-family: Verdana;
+        margin-bottom: 20px
+    }
+
+    #neon {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 29.9px;
+        font-family: "Meddon";
+        color: #FFF;
+        text-shadow: 
+            0 0 5px black,
+            0 0 6px black,
+            0 0 10px #FFF,
+            0 0 20px #FFCB0F,
+            0 0 30px #FFCB0F,
+            0 0 40px #FFCB0F,
+            0 0 50px #FFCB0F,
+            0 0 60px #FFCB0F;
+    }
+}

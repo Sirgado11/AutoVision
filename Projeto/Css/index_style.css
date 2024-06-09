@@ -1,0 +1,396 @@
+/* Barra de navegação */
+nav {
+    margin: 30px;
+    padding: 10px 30px;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #FFCB0F;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.ecratele {
+    display: none;
+}
+
+/* Posição do logo */
+.logo {
+    margin-right: 50px;
+}
+
+/* Design da parte de login */
+.login, .entrar, .cadastrar {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+}
+
+.login {
+    text-align: center;
+    display: inline;
+    padding: 20px;
+    font-family: Verdana;
+    margin-left: auto;
+}
+
+.entrar {
+    margin-right: 15px;
+    transition: 0.5s ease all;
+}
+
+.cadastrar {
+    padding: 10px;
+    background-color: black;
+    transition: 0.5s ease all;
+}
+
+/* Design dos botões do menu centrados ao meio */
+.menu {
+    text-align: center;
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: Verdana;
+    margin-right: 5px;
+    transition: 0.5s ease all;
+}
+
+/* Tema após passagem de cursor */
+.saiba a:hover,
+.cadastrar:hover,
+.menu a:hover,
+.menu .ativo {
+    box-shadow: 0 0 20px #FFCB0F;
+    background-color: #FFCB0F;
+    color: black;
+}
+
+.entrar:hover {
+    color: #FFCB0F;
+    text-shadow: 0 0 20px #FFCB0F;
+}
+
+/* Tamanho da logo */
+.logo img {
+    width: 75px;
+    height: 75px;
+}
+
+/* Corpo */
+body {
+    margin: 0;
+    background-image: url(/img/Background_ouro.png);
+    background-size: cover;
+    color: white;
+    font-family: Verdana;
+}
+
+.conteudo {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.saiba {
+    border: 3px solid #FFCB0F;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: x-large;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2% 3%;
+    text-align: center;
+    flex-direction: column;
+    top: 63%;
+    left: 5%;
+}
+
+.saiba a {
+    display: flex;
+    border: 3px solid #FFCB0F;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: Verdana;
+}
+
+.conteudo img {
+    border: 3px solid #FFCB0F;
+    border-radius: 50px;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    margin: 30px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #FFCB0F;
+    background-color: black;
+}
+
+footer .info p,
+footer .botoes {
+    flex-direction: row;
+    margin: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana;
+    margin: 10px;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    color: #FFCB0F;
+}
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+    background: black;
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    cursor: pointer;
+    background: #FFCB0F; /* Cor do fundo da barra de rolagem */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Polegar (a parte móvel) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: black; /* Cor do polegar */
+    border-radius: 10px; /* Cantos arredondados */
+    border: 2px solid #FFCB0F; /* Borda para espaçamento e estética */
+}
+
+/* Polegar ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: black; /* Cor do polegar ao passar o mouse */
+}
+
+/* Opcional: Estilizando os botões de rolagem (acima/abaixo) */
+::-webkit-scrollbar-button {
+    background: black;
+}
+
+/* Opcional: Estilizando a borda da barra de rolagem */
+::-webkit-scrollbar-corner {
+    background: #FFCB0F;
+}
+
+@media only screen and (max-width: 768px) {
+    .ecratele {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ecrapc {
+        display: none;
+    }
+
+    nav {
+        margin: 5% 5% 0 5%;
+        padding: 2% 5%;
+        background-color: rgb(0, 0, 0);
+        border: 3px solid #FFCB0F;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav .logo {
+        width: 30%;
+        height: 30%;
+        margin: 0;
+    }
+
+    .conteudo {
+        position: relative;
+        z-index: 0;
+    }
+
+    #trocaMenu {
+        margin: 0;
+    }
+
+    .menutele {
+        gap: 20px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: -400px; /* Start with the menu hidden */
+        width: 120px;
+        height: 100%;
+        background-color: black;
+        overflow: hidden;
+        transition: left 0.5s ease-in-out; /* Transition effect for smooth sliding */
+    }
+
+    .show img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .ecratele img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .show button,
+    .ecratele button {
+        margin: 50px 10px 10px 10px;
+    }
+
+    .show button,
+    .ecratele button {
+        cursor: pointer;
+        color: #FFCB0F;
+        border: 3px solid black;
+        border-radius: 10px;
+        background-color: black;
+        text-decoration: none;
+        text-align: center;
+        padding: 1px;
+        transition: 0.3s ease all;
+    }
+
+    .show a:hover {
+        text-shadow: 0 0 15px #FFCB0F, 0 0 30px #FFCB0F;
+    }
+
+    .show button:hover {
+        color: black;
+        box-shadow: 0 0 20px #FFCB0F;
+    }
+
+    .show a,
+    .menutele a {
+        color: #FFCB0F;
+        text-decoration: none;
+        text-align: center;
+        margin: 10px;
+        transition: 0.2s ease all;
+    }
+
+    .show {
+        gap: 20px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 120px;
+        height: 100%;
+        background-color: black;
+        overflow: hidden;
+        transition: left 0.5s ease-in-out;
+    }
+
+    .mostrar-menu {
+        left: 0;
+    }
+
+    .conteudo {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .conteudo img {
+        width: 90%;
+        height: auto;
+        margin: 0;
+        border-radius: 25px;
+    }
+
+    /* Design da parte de login */
+    .login, .entrar, .cadastrar {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(34, 34, 34);
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .login {
+        text-align: center;
+        display: inline;
+        padding: 20px;
+        font-family: Verdana;
+        margin-left: auto;
+    }
+
+    .entrar {
+        margin-right: 15px;
+        transition: 0.5s ease all;
+    }
+
+    .cadastrar {
+        padding: 10px;
+        background-color: black;
+        transition: 0.5s ease all;
+    }
+
+    .conteudo .saiba {
+        border: 3px solid #FFCB0F;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 12px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 2% 3%;
+        text-align: center;
+        flex-direction: column;
+        top: 49%;
+        left: 12%;
+    }
+
+    footer {
+        font-size: 12px;
+        margin: 0 5% 5% 5%;
+        padding: 2% 3%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .info p,
+    footer .botoes {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    footer a {
+        margin: 5px 0;
+    }
+}

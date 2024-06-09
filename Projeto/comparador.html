@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Css/comparador_style.css" media="screen" />
+    <title>AutoVision</title>
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html"><img src="/img/logos/logo.png"></a>
+        <div class="menu">
+            <a href="index.html">Início</a> 
+            <a href="carros.html">Carros</a>
+            <a class="ativo" href="comparador.html">Comparador</a>  
+        </div>
+        <div class="login">
+            <a class="entrar" href="entrar.html">Entrar</a>
+            <a class="cadastrar" href="cadastrar.html">Registrar</a>
+        </div>
+    </nav>
+
+    <div class="conteudo">
+        <div class="descricao">
+            <h1 class="neon">Comparador</h1>
+            <p>Bem-vindos ao Comparador da AutoVision, onde a tomada de decisão se torna bem mais fácil! Aqui, irá poder explorar e comparar lado a lado uma vasta gama de carros para encontrar o veículo que melhor atende às suas necessidades e desejos.</p>
+        </div>
+        <div class="informa"> 
+            <div class="gallery">
+                <a href="carros.html"><img id="img1" src="img/botao.png"></a>
+                <a href="carros.html"><img id="img2" src="img/botao.png"></a>
+            </div>
+            <div class="tabelas">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Categoria: </th>
+                            <td id="cat1"></td>
+                            <td id="cat2"></td>
+                        </tr>
+                        <tr>
+                            <th>Modelo: </th>
+                            <td id="mod1"></td>
+                            <td id="mod2"></td>
+                        </tr>
+                        <tr>
+                            <th>Ano: </th>
+                            <td id="ano1"></td>
+                            <td id="ano2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h1>Dimensões e Peso</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Lugares: </th>
+                            <td id="lug1"></td>
+                            <td id="lug2"></td>
+                        </tr>
+                        <tr>
+                            <th>Bagagem: </th>
+                            <td id="bag1"></td>
+                            <td id="bag2"></td>
+                        </tr>
+                        <tr>
+                            <th>Peso: </th>
+                            <td id="pes1"></td>
+                            <td id="pes2"></td>
+                        </tr>
+                        <tr>
+                            <th>Comprimento: </th>
+                            <td id="com1"></td>
+                            <td id="com2"></td>
+                        </tr>
+                        <tr>
+                            <th>Altura: </th>
+                            <td id="alt1"></td>
+                            <td id="alt2"></td>
+                        </tr>
+                        <tr>
+                            <th>Largura: </th>
+                            <td id="lar1"></td>
+                            <td id="lar2"></td>
+                        </tr>
+                        <tr>
+                            <th>Aerodinâmica: </th>
+                            <td id="aer1"></td>
+                            <td id="aer2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h1>Motor</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Combustível: </th>
+                            <td id="mot1"></td>
+                            <td id="mot2"></td>
+                        </tr>
+                        <tr>
+                            <th>Deslocamento: </th>
+                            <td id="des1"></td>
+                            <td id="des2"></td>
+                        </tr>
+                        <tr>
+                            <th>Potência: </th>
+                            <td id="hp1"></td>
+                            <td id="hp2"></td>
+                        </tr>
+                        <tr>
+                            <th>Torque: </th>
+                            <td id="tor1"></td>
+                            <td id="tor2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h1>Travões e Rodas</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Tipo de Travões: </th>
+                            <td id="tra1"></td>
+                            <td id="tra2"></td>
+                        </tr>
+                        <tr>
+                            <th>Tamanho da Roda: </th>
+                            <td id="rod1"></td>
+                            <td id="rod2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h1>Desempenho</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Velocidade Máx.: </th>
+                            <td id="vel1"></td>
+                            <td id="vel2"></td>
+                        </tr>
+                        <tr>
+                            <th>Aceleração: </th>
+                            <td id="ace1"></td>
+                            <td id="ace2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h1>Consumo</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Consumo Urbano: </th>
+                            <td id="urb1"></td>
+                            <td id="urb2"></td>
+                        </tr>
+                        <tr>
+                            <th>Consumo Cidade: </th>
+                            <td id="cid1"></td>
+                            <td id="cid2"></td>
+                        </tr>
+                        <tr>
+                            <th>Consumo Combinado: </th>
+                            <td id="combi1"></td>
+                            <td id="combi2"></td>
+                        </tr>
+                        <tr>
+                            <th>Emissão de CO2: </th>
+                            <td id="co21"></td>
+                            <td id="co22"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="info">
+            <p>
+                Número: +351 935 989 627 (fake)
+                Email: 25949@ipt.pt
+            </p>
+        </div>
+        
+        <div class="botoes">
+            <a href="sobre.html">Sobre nós</a> |
+            <a href="contact.html">Contacte-nos</a>
+        </div>
+    </footer>
+    <script src="/javascript/marca.js"></script>
+    <script src="/javascript/carDetails.js"></script>
+</body>
+</html>

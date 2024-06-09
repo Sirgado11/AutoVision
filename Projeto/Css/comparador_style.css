@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
+
+/* Barra de navegação */
+nav {
+    margin: 30px;
+    padding: 10px 30px;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #FFCB0F;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Posição do logo */
+.logo {
+    margin-right: 50px;
+}
+
+/* Design da parte de login */
+.login, .entrar, .cadastrar {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+}
+
+.login {
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    font-family: Verdana;
+    margin-left: auto;
+}
+
+.entrar {
+    margin-right: 15px;
+    transition: 0.5s ease all;
+}
+
+.cadastrar {
+    padding: 10px;
+    background-color: black;
+}
+
+/* Design dos botões do menu centrados ao meio */
+.menu {
+    text-align: center;
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: Verdana;
+    margin-right: 5px;
+    transition: 0.5s ease all;
+}
+
+.login a {
+    transition: 0.5s ease all;
+}
+
+/* Tema após passagem de cursor */
+.saiba a:hover, 
+.cadastrar:hover,
+.menu a:hover,
+.menu .ativo {
+    box-shadow: 0 0 20px #FFCB0F;
+    background-color: #FFCB0F;
+    color: black;
+}
+
+.entrar:hover {
+    text-shadow: 0 0 20px #FFCB0F;
+    color: #FFCB0F;
+}
+
+/* Tamanho da logo */
+.logo img {
+    width: 75px;
+    height: 75px;
+}
+
+/* Corpo */
+body {
+    margin: 0;
+    background-image: url(/img/background_ouro.png);
+    background-size: 100%;
+    color: rgb(255, 255, 255);
+    font-family: Verdana;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 165px;
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid #FFCB0F;
+    border-radius: 20px;
+}
+
+.imagem{
+    text-align: center;
+}
+
+.conteudo h1 {
+    text-align: center;
+    margin: 0.8%;
+}
+
+.conteudo p {
+    text-align: justify;
+    margin: 0 5%;
+    font-size: large;
+}
+
+.gallery{
+    margin: 50px 150px 20px 150px;
+    text-align: right;
+}
+
+.gallery img{
+    border: 3px solid #FFCB0F;
+    border-radius: 20px;
+    width: 250px;
+    height: auto;
+    margin: 0px 20px;
+    transition: 0.5s ease all;
+}
+.gallery img:hover{
+    box-shadow: 0 0 20px #FFCB0F;
+}
+
+.tabelas h1{
+    text-align: left;
+    text-shadow: 
+        0 0 5px black,
+        0 0 6px black,
+        0 0 10px #FFF,
+        0 0 20px #FFCB0F,
+        0 0 30px #FFCB0F;
+}
+
+.tabelas{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;   
+}
+
+table {
+    background-color: rgb(34, 34, 34);
+    margin: 30px 50px;
+    padding: 40px;
+    border-radius: 20px;
+    min-width: 90%;
+}
+
+th {
+    min-width: 100px;
+    max-width: 100px;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+td {
+    min-width: 200px;
+    max-width: 200px;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 100px;
+}
+
+footer {
+    margin: 30px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #FFCB0F;
+    background-color: black;
+}
+
+footer .info p,
+footer .botoes {
+    flex-direction: row;
+    margin: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana;
+    margin: 10px;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    color: #FFCB0F;
+}
+
+.neon {
+    margin: 0 auto;
+    font-size: 39.9px;
+    font-family: 'Meddon';
+    color: #FFF;
+    text-shadow: 
+        0 0 5px black,
+        0 0 6px black,
+        0 0 10px #FFF,
+        0 0 20px #FFCB0F,
+        0 0 30px #FFCB0F,
+        0 0 40px #FFCB0F,
+        0 0 50px #FFCB0F,
+        0 0 60px #FFCB0F;
+}
+
+::-webkit-scrollbar {
+    background: black;
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    cursor: pointer;
+    background: #FFCB0F; /* Cor do fundo da barra de rolagem */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Polegar (a parte móvel) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: black; /* Cor do polegar */
+    border-radius: 10px; /* Cantos arredondados */
+    border: 2px solid #FFCB0F; /* Borda para espaçamento e estética */
+}
+
+/* Polegar ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: black; /* Cor do polegar ao passar o mouse */
+}
+
+/* Opcional: Estilizando os botões de rolagem (acima/abaixo) */
+::-webkit-scrollbar-button {
+    background: black;
+}
+
+/* Opcional: Estilizando a borda da barra de rolagem */
+::-webkit-scrollbar-corner {
+    background: #FFCB0F;
+}

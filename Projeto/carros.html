@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/carros_style.css" media="screen" />
+    <title>AutoVision</title>
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html"><img src="/img/logos/logo.png" alt="AutoVision Logo"></a>
+        <div class="menu">
+            <a href="index.html">Início</a> 
+            <a class="ativo" href="carros.html">Carros</a>
+            <a href="comparador.html">Comparador</a> 
+        </div>
+        <div class="login">
+            <a class="entrar" href="entrar.html">Entrar</a>
+            <a class="cadastrar" href="cadastrar.html">Registrar</a>
+        </div>
+    </nav>
+
+    <div class="conteudo"> 
+        <h1 class="neon">Marcas</h1>
+        <div class="gallery">
+            <a class="checkFileLink" href="marca.html?brand=Alfa%20Romeo"><img src="img/logos/alfaromeo.png" alt="Alfa Romeo"></a>
+            <a class="checkFileLink" href="marca.html?brand=Audi"><img src="img/logos/audi.png" alt="Audi"></a>
+            <a class="checkFileLink" href="marca.html?brand=BMW"><img src="img/logos/bmw.png" alt="BMW"></a>
+            <a class="checkFileLink" href="marca.html?brand=Citroën"><img src="img/logos/citroen.png" alt="Citroën"></a>
+        </div>
+        <div class="gallery">
+            <a class="checkFileLink" href="marca.html?brand=Dacia"><img src="img/logos/dacia.png" alt="Dacia"></a>
+            <a href="marca.html?brand=Fiat"><img src="img/logos/fiat.png" alt="Fiat"></a>
+            <a href="marca.html?brand=Ford"><img src="img/logos/ford.png" alt="Ford"></a>
+            <a href="marca.html?brand=Honda"><img src="img/logos/honda.png" alt="Honda"></a>
+        </div>
+    </div>
+
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <img src="img/carro_abandonado.png" alt="Erro" width="50" height="50">
+            <p>Página em manutenção!</p>
+            <p>Pedimos desculpa mas esta marca ainda se encontra em manutenção, estamos a acabar uns últimos ajustes.</p>
+            <p>Obrigado pela compreensão!</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="info">
+            <p>
+                Número: +351 935 989 627 (fake)
+                Email: 25949@ipt.pt
+            </p>
+        </div>
+        
+        <div class="botoes">
+            <a href="sobre.html">Sobre nós</a> |
+            <a href="contact.html">Contacte-nos</a>
+        </div>
+    </footer>
+
+    <script src="javascript/carros.js"></script>
+</body>
+</html>
